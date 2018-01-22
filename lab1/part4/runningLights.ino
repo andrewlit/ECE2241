@@ -19,7 +19,7 @@ void loop()
 	for (int x = 0; x < 8; x ++)
 	{
 		digitalWrite(leds[x], HIGH);
-		delay(1000);
+		delay(100);
 		digitalWrite(leds[x], LOW);
 	}
 }

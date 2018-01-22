@@ -6,6 +6,7 @@ const int led1=7;
 const int led2 = 13;
 void setup()
 {
+	//Set the led pins to output
 	pinMode(led1, OUTPUT);
 	pinMode(led2, OUTPUT);
 }
@@ -47,8 +48,8 @@ void blinkOutPhase()
 //Loop to blink
 void loop()
 {
-//	blink7();
-	//blinkInPhase();
-	blinkOutPhase();
+	blink7();
+//	blinkInPhase();
+//	blinkOutPhase();
 }
 
