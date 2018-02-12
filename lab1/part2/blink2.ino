@@ -48,8 +48,8 @@ void blinkOutPhase()
 //Loop to blink
 void loop()
 {
-	blink7();
+//	blink7();
 //	blinkInPhase();
-//	blinkOutPhase();
+	blinkOutPhase();
 }
 

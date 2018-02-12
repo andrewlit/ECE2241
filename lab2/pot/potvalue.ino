@@ -3,6 +3,7 @@
 #define potPin A0
 int potVal = 0;
 float angle = 0;
+float voltage = 0;
 
 void setup()
 {
@@ -14,7 +15,11 @@ void loop()
 {
 	potVal = analogRead(potPin);
 	angle = potVal/1023.0 * 250.0;
-	Serial.println (angle);
-	delay(100);
+	voltage = potVal/1023.0 * 5.0;
+	Serial.print (voltage);
+	Serial.print ("V: ");
+	Serial.print (angle);
+	Serial.println (" degrees");
+	delay(500);
 }
 

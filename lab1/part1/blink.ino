@@ -1,6 +1,7 @@
 //This is a simple sketch to blink the onboard LED
 //by Andrew Lit, 2018, for ECE2241b
 
+int blinkTime = 250;
 //Set things up
 void setup()
 {
@@ -11,7 +12,7 @@ void setup()
 void loop()
 {
 	digitalWrite(13, HIGH);
-	delay(1000);
+	delay(blinkTime);
 	digitalWrite(13, LOW);
-	delay(1000);
+	delay(blinkTime);
 }

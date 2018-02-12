@@ -15,6 +15,8 @@ void loop()
 {
 	tempVal = analogRead(tempSensor);
 	convertedTemp = 500.0/1023.0*tempVal;
-	Serial.println (convertedTemp);
-	delay(100);
+	Serial.print ("Temperature: ");
+	Serial.print (convertedTemp);
+	Serial.println("C");
+	delay(500);
 }

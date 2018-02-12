@@ -22,4 +22,10 @@ void loop()
 		delay(100);
 		digitalWrite(leds[x], LOW);
 	}
+	for (int x = 7; x > 0; x --)
+	{
+		digitalWrite(leds[x], HIGH);
+		delay(100);
+		digitalWrite(leds[x], LOW);
+	}
 }

@@ -10,7 +10,7 @@
 
 // digital pin 2 has a pushbutton attached to it. Give it a name:
 int pushButton = 2;
-int led = 13;
+int led = 6;
 
 // the setup routine runs once when you press reset:
 void setup() {
@@ -27,10 +27,14 @@ void loop() {
 
   //Turn the LED on when the button is pushed
   if (buttonState) 
+  {
 	  digitalWrite(led, HIGH);
+  }
   
   else 
+  {
 	  digitalWrite (led, LOW);
+  }
 
   // print out the state of the button:
   Serial.println(buttonState);
