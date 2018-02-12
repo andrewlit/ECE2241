@@ -1,6 +1,6 @@
 void setup()
 {
-pinMode(13, OUTPUT);// where the motor is connected to
+pinMode(3, OUTPUT);// where the motor is connected to
 Serial.begin(9600);
 while (! Serial);
 Serial.println("Speed 0 to 255");
